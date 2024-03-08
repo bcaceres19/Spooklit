@@ -76,21 +76,6 @@ public class ControlerCube : MonoBehaviour {
     void OnCollisionEnter(Collision other) 
     {
     Debug.Log ("He colisionado");
-    if (other.gameObject.tag == "Vida"){
-    Destroy (other.gameObject);
-        }
      }
-
-   
-   
-    void OnTriggerEnter(Collider other)
-    {
-    if (other.tag == "Veneno")
-	{
-	Destroy(this.gameObject);
-	}
-	
-}
-
 
 }
